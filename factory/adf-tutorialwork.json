@@ -1,0 +1,9 @@
+{
+	"name": "adf-tutorialwork",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "cc90ebf5-b31d-4da0-99c8-af1621c8a189",
+		"tenantId": "5b973f99-77df-4beb-b27d-aa0c70b8482c"
+	}
+}
