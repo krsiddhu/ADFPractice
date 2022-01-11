@@ -1,0 +1,22 @@
+{
+	"name": "DestinationDataset_frl",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorageToMoveFiles",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "outputofcopydatatool",
+				"container": "c-adffiles"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
