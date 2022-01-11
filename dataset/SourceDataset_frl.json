@@ -1,0 +1,28 @@
+{
+	"name": "SourceDataset_frl",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorageToMoveFiles",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "CMT Notes.txt",
+				"folderPath": "input",
+				"container": "c-adffiles"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": false,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"type": "String"
+			}
+		]
+	}
+}
