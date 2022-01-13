@@ -1,0 +1,25 @@
+{
+	"name": "MinuteTrigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "CopyData_FiletoSQL",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 1,
+				"startTime": "2022-01-13T20:15:00Z",
+				"endTime": "2022-01-13T20:24:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}
