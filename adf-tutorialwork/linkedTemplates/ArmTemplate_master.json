@@ -7,13 +7,17 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "adf-tutorialwork"
 		},
-		"AzureBlobStorageToMoveFiles_properties_typeProperties_connectionString_secretName": {
-			"type": "string",
-			"defaultValue": "sec-stforadfcli-connection"
+		"AzureBlobStorageToMoveFiles_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorageToMoveFiles'"
 		},
-		"ls_AzureKeyVault_storage_properties_typeProperties_baseUrl": {
+		"ls_sql_testdb_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'ls_sql_testdb'"
+		},
+		"ls_kvadfpasswords_properties_typeProperties_baseUrl": {
 			"type": "string",
-			"defaultValue": "https://kvadfconnections.vault.azure.net/"
+			"defaultValue": "https://kvadfdata.vault.azure.net/"
 		},
 		"containerUri": {
 			"type": "string",
@@ -42,11 +46,14 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
-					"ls_AzureKeyVault_storage_properties_typeProperties_baseUrl": {
-						"value": "[parameters('ls_AzureKeyVault_storage_properties_typeProperties_baseUrl')]"
+					"AzureBlobStorageToMoveFiles_connectionString": {
+						"value": "[parameters('AzureBlobStorageToMoveFiles_connectionString')]"
 					},
-					"AzureBlobStorageToMoveFiles_properties_typeProperties_connectionString_secretName": {
-						"value": "[parameters('AzureBlobStorageToMoveFiles_properties_typeProperties_connectionString_secretName')]"
+					"ls_sql_testdb_connectionString": {
+						"value": "[parameters('ls_sql_testdb_connectionString')]"
+					},
+					"ls_kvadfpasswords_properties_typeProperties_baseUrl": {
+						"value": "[parameters('ls_kvadfpasswords_properties_typeProperties_baseUrl')]"
 					}
 				}
 			},

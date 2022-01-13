@@ -5,11 +5,14 @@
 		"factoryName": {
 			"value": "adf-tutorialwork"
 		},
-		"AzureBlobStorageToMoveFiles_properties_typeProperties_connectionString_secretName": {
-			"value": "sec-stforadfcli-connection"
+		"AzureBlobStorageToMoveFiles_connectionString": {
+			"value": ""
 		},
-		"ls_AzureKeyVault_storage_properties_typeProperties_baseUrl": {
-			"value": "https://kvadfconnections.vault.azure.net/"
+		"ls_sql_testdb_connectionString": {
+			"value": ""
+		},
+		"ls_kvadfpasswords_properties_typeProperties_baseUrl": {
+			"value": "https://kvadfdata.vault.azure.net/"
 		},
 		"containerUri": {
 			"value": ""
