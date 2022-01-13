@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "LoadfromFiletoSQL",
+				"name": "LoadfromSQLtoFile",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
