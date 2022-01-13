@@ -469,21 +469,34 @@
 			]
 		},
 		{
+			"name": "[concat(parameters('factoryName'), '/2mintrigger')]",
+			"type": "Microsoft.DataFactory/factories/triggers",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"runtimeState": "Stopped",
+				"pipelines": [],
+				"type": "ScheduleTrigger",
+				"typeProperties": {
+					"recurrence": {
+						"frequency": "Minute",
+						"interval": 2,
+						"startTime": "2022-01-13T19:59:00",
+						"endTime": "2022-01-14T20:45:00",
+						"timeZone": "India Standard Time"
+					}
+				}
+			},
+			"dependsOn": []
+		},
+		{
 			"name": "[concat(parameters('factoryName'), '/MinuteTrigger')]",
 			"type": "Microsoft.DataFactory/factories/triggers",
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Started",
-				"pipelines": [
-					{
-						"pipelineReference": {
-							"referenceName": "CopyData_FiletoSQL",
-							"type": "PipelineReference"
-						},
-						"parameters": {}
-					}
-				],
+				"runtimeState": "Stopped",
+				"pipelines": [],
 				"type": "ScheduleTrigger",
 				"typeProperties": {
 					"recurrence": {
@@ -495,9 +508,7 @@
 					}
 				}
 			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/pipelines/CopyData_FiletoSQL')]"
-			]
+			"dependsOn": []
 		}
 	]
 }
