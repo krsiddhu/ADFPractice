@@ -1,0 +1,26 @@
+{
+	"name": "ds_storage_out",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorageToMoveFiles",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@pipeline().Pipeline",
+					"type": "Expression"
+				},
+				"folderPath": "Output",
+				"container": "c-adffiles"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
