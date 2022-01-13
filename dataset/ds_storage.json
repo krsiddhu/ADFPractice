@@ -1,0 +1,31 @@
+{
+	"name": "ds_storage",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorageToMoveFiles",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "CMT Notes.txt",
+				"folderPath": "input",
+				"container": "c-adffiles"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			}
+		]
+	}
+}
