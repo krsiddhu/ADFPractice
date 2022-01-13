@@ -1,0 +1,25 @@
+{
+	"name": "2mintrigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "CopyData_FiletoSQL",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 2,
+				"startTime": "2022-01-13T19:59:00",
+				"endTime": "2022-01-14T20:45:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}
