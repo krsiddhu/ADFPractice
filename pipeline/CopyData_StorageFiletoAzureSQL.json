@@ -1,5 +1,5 @@
 {
-	"name": "CopyData_FiletoSQL",
+	"name": "CopyData_StorageFiletoAzureSQL",
 	"properties": {
 		"activities": [
 			{
