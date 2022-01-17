@@ -1,0 +1,6 @@
+{
+	"name": "copyAzSQLtoSynapse",
+	"properties": {
+		"annotations": []
+	}
+}
