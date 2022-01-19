@@ -1,10 +1,6 @@
 {
 	"name": "ds_locSql_src",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "SqlServer1",
-			"type": "LinkedServiceReference"
-		},
 		"parameters": {
 			"table": {
 				"type": "string",
